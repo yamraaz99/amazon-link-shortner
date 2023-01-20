@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<form>
+Enter URL: <input type="text" id="urlInput">
+<br><br>
+<button onclick="modifyURL()">Submit</button>
+</form> 
+
+<p id="modifiedURL"></p>
+
+<script>
+function modifyURL() {
+    var input = document.getElementById("urlInput").value;
+    var modifiedURL = input + "?tag=kuldeep02f-21";
+    document.getElementById("modifiedURL").innerHTML = modifiedURL;
+}
+</script>
+
+</body>
+</html>
